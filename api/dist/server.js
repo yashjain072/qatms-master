@@ -14,6 +14,7 @@ var demo_1 = __importDefault(require("./routes/demo"));
 var db_1 = __importDefault(require("./config/db"));
 var app = express_1.default();
 var port = config_1.default.server.port;
+const cors = require("cors");
 //Middleware
 app.use(cors({
     origin: ["http://localhost:3000", "https://mern-task-app.onrender.com"],

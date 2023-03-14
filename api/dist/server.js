@@ -15,7 +15,9 @@ var db_1 = __importDefault(require("./config/db"));
 var app = express_1.default();
 var port = config_1.default.server.port;
 //Middleware
-app.use(cors_1.default());
+app.use(cors_1({
+    origin: ["http://localhost:3000", "https://mern-task-app.onrender.com"],
+    ));
 app.use(express_1.default.json());
 //Connect to DB
 db_1.default();

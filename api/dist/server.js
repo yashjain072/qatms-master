@@ -17,7 +17,7 @@ var port = config_1.default.server.port;
 const cors = require("cors");
 //Middleware
 app.use(cors({
-    origin: ["http://localhost:3000", "https://mern-task-app.onrender.com"],
+    origin: ["https://mern-task-app.onrender.com"],
 }));
 app.use(express_1.default.json());
 //Connect to DB
